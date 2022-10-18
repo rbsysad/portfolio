@@ -1,0 +1,57 @@
+:root {
+  --header: 3rem;
+  --footer: 40px;
+  --main: calc(100vh - calc(var(--header) + var(--footer)));
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0px solid transparent;
+  background: #7a7a7a;
+}
+
+#container {
+  border: 0px solid transparent;
+  height: 100vh;
+  color: white;
+}
+
+#container > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header {
+  display: flex;
+  width: 50vw;
+  justify-content: flex-end;
+  height: var(--header);
+  background: #111111;
+}
+
+.header__link-div {
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+#mainContent {
+  height: var(--main);
+  background: #343434;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#footer {
+  height: var(--footer);
+  background: #232323;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
