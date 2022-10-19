@@ -1,71 +1,88 @@
 :root {
-    --header: 3rem;
-    --footer: 40px;
-    --main: calc(100vh - calc(var(--header) + var(--footer)));
+  --header: 15rem;
+  --footer: 40px;
+  --main: calc(100vh - calc(var(--header) + var(--footer)));
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    border: 0px solid transparent;
-    background: #7a7a7a;
+  margin: 0;
+  padding: 0;
+  border: 0px solid transparent;
+  background: #7a7a7a;
 }
 
 #container {
-    border: 0px solid transparent;
-    height: 100vh;
-    color: white;
+  border: 0px solid transparent;
+  height: 100vh;
+  color: white;
 }
 
 #container > * {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #111111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
 }
 
 #header {
-    display: flex;
-    justify-content: center;
-    height: var(--header);
+  display: flex;
+  justify-content: center;
+  height: var(--header);
 }
 
 .header__div {
-    display: inline-flex;
-    width: 80%;
-    justify-content: space-between;
+  display: inline-flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__logo-div {
-    font-family: 'Caveat', cursive;
-    font-size: 2em;
-    padding-left: 1em;
+  font-family: 'Caveat', cursive;
+  font-size: 2em;
+  padding-left: 1em;
 }
 
 .header__link-div {
-    display: flex;
-    width: 30vw;
-    min-width: 16em;
-    max-width: 16em;
-    padding-right: 1em;
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  width: 20vw;
+  padding-right: 1em;
 }
 
 ul {
-    display: inline-flex;
-    justify-content: space-around;
-    width: 100%;
-    list-style: none;
-    overflow: hidden;
+  display: inline-flex;
+  justify-content: space-around;
+  width: 100%;
+  list-style: none;
+  overflow: hidden;
 }
 
-#mainContent {
-    height: var(--main);
-    background: #343434;
-    margin-right: auto;
-    margin-left: auto;
+.glow {
+  color: #fff;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.glow:hover {
+  color: rgb(151, 255, 151);
+  text-shadow: 0px 0px 30px #ffffff;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+#main-content {
+  height: var(--main);
+  background: #343434;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #footer {
-    height: var(--footer);
-    background: #232323;
+  height: var(--footer);
+  background: #232323;
 }
